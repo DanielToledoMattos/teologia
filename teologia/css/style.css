@@ -1,0 +1,205 @@
+    @font-face {
+        font-family: 'Bison';
+        src: url(/fonts/Bison.ttf) format('truetype');
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        background-color: #7c1034;
+        padding-bottom: 80px;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+        background-color: #7c1034;
+        color: rgb(54, 63, 189);
+        display: flex;
+        /* Alinha tudo em linha horizontal */
+        height: 70px;
+        justify-content: space-between;
+        /* Espaço entre os grupos */
+        align-items: center;
+    }
+
+    /* Container para logo + botões */
+    .left-section {
+        display: flex;
+        /* Faz os itens ficarem lado a lado */
+        align-items: center;
+        gap: 10px;
+        /* Espaçamento entre logo e botões */
+    }
+
+    .right-section {
+        display: flex;
+        /* Faz os itens ficarem lado a lado */
+        align-items: center;
+        gap: 10px;
+        /* Espaçamento entre logo e botões */
+    }
+
+    .right-section img {
+        padding: 12px;
+        height: 40px;
+    }
+
+    .right-section :hover {
+        transform: scale(1.05);
+        transition: 0.6s;
+
+    }
+
+
+    .logo {
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .logo img {
+        padding-left: 10px;
+        height: 70px;
+    }
+
+    .menu {
+        position: relative;
+        height: 40px;
+    }
+
+    .menu button {
+        background-color: transparent;
+        color: #99c8f2;
+        border: none;
+        cursor: pointer;
+        color: #99c8f2;
+        height: 100%;
+    }
+
+    .menu button:hover {
+        color: #479de9b7;
+        transition: 0.7s;
+        transform: scale(1.05)
+    }
+
+    .dropdown {
+        font-size: 15px;
+        display: none;
+        position: absolute;
+        background-color: #7c1034;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown button:hover {
+        transition: 4s;
+    }
+
+    .dropdown a {
+        color: #99c8f2;
+        padding: 10px 12px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #852c4abb;
+        transition: 0.7s;
+        transform: scale(1.05);
+    }
+
+    .menu:hover .dropdown {
+        display: block;
+    }
+
+    hr {
+        position: relative;
+        border-color: #99c8f2;
+        ;
+    }
+
+    main {
+        text-align: center;
+        background-color: #7c1034;
+    }
+
+    main p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #99c8f2;
+
+    }
+
+    .container_main {
+        display: flex;
+        background-color: #7c1034;
+        gap: 10vw;
+    }
+
+    article h1 {
+        font-family: 'Bison';
+        background-color: #7c1034;
+        color: #99c8f2;
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .article_left {
+        width: 45vw;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .article_right iframe {
+        padding: 10px;
+    }
+
+    .article_right {
+        width: 45vw;
+    }
+
+    .swiper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .swiper-slide {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide iframe {
+        width: 100%;
+        /* Faz o iframe ocupar a largura total do slide */
+        height: auto;
+        /* Mantém a proporção */
+        max-width: 560px;
+        /* Define um tamanho máximo para telas maiores */
+        aspect-ratio: 16 / 9;
+        /* Mantém a proporção de 16:9 para vídeos */
+    }
+
+
+
+
+    footer {
+        border-top: 2px solid #99c8f2;
+        font-family: 'Bison';
+        font-size: 20px;
+        color: #99c8f2;
+        background-color: #7c1034;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+    }
+
+    footer h3 {
+        padding: 8px;
+    }
